@@ -8,13 +8,14 @@ $serif: serif;
 $sans: sans-serif;
 $leftmargin: 50px;    
 $padding: 10px;
-$border: 2px solid #064277;
-$borderradius: 20px;
+
 //END VARIABLES
 
 //BEGIN MIXIN
 
-@mixin borderandradius {
+//2px solid #064277
+//20px
+@mixin borderandradius ($border: 5px solid black, $borderradius: 10px){
     border: $border;
     border-radius: $borderradius;
 }
@@ -23,7 +24,7 @@ $borderradius: 20px;
 
 
 header {
-    @include borderandradius;
+    @include borderandradius(2px solid #064277, 20px);
     margin: 10px auto;
     padding: $padding;
     background-color: $bluebackground;
@@ -46,14 +47,13 @@ body {
     background-color: $graybackground;
 
     #content {
-        @include borderandradius;
+        @include borderandradius(2px solid #064277, 20px);
         margin: 10px auto;
         padding: $padding;
         background-color: $bluebackground;
            
         .samplepara {
-            border: 3px solid #58a0e0;
-            border-radius: 5px;
+            @include borderandradius(2px solid #064277, 20px);
             padding: $padding;
             background-color: white;
                 }
@@ -61,7 +61,7 @@ body {
         }
 
     #list {
-        @include borderandradius;
+        @include borderandradius(2px solid #064277, 20px);
         background-color: $bluebackground;
             
         h3 {
@@ -85,7 +85,7 @@ body {
 
 
 footer {
-    @include borderandradius;
+    @include borderandradius(2px solid #064277, 20px);
     margin: 10px auto;
     padding: $padding;
     background-color: $bluebackground;
