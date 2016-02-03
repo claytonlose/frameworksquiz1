@@ -18,6 +18,13 @@ header {
     padding: $padding;
     background-color: $bluebackground;
     text-align: center;
+    
+    h1 {
+        color:#58a0e0;
+            }
+    h2 {
+        color: #064277;
+            }
 }
 
 body {
@@ -27,51 +34,47 @@ body {
     font-size: 1em;
     font-style:oblique;
     background-color: $graybackground;
+
+    #content {
+        border: 2px solid #064277;
+        border-radius: 20px;
+        margin: 10px auto;
+        padding: $padding;
+        background-color: $bluebackground;
+           
+        .samplepara {
+            border: 3px solid #58a0e0;
+            border-radius: 5px;
+            padding: $padding;
+            background-color: white;
+                }
+        
+        }
+
+    #list {
+        border: 2px solid #064277;
+        border-radius: 20px;
+        background-color: $bluebackground;
+            
+        h3 {
+            margin-left: 50px;
+            color:#58a0e0
+                }
+            ul{
+                margin-left: $leftmargin;
+                    }
+    
+            }
+    
+    p {
+        font-family: $serif;
+        font-style:normal;
+            }
+
 }
 
 
-h1 {
-    color:#58a0e0;
-}
 
-#content {
-    border: 2px solid #064277;
-    border-radius: 20px;
-    margin: 10px auto;
-    padding: $padding;
-    background-color: $bluebackground;
-}
-
-#list{
-    border: 2px solid #064277;
-    border-radius: 20px;
-    background-color: $bluebackground;
-}
-
-h2 {
-    color: #064277;
-}
-
-h3 {
-    margin-left: 50px;
-    color:#58a0e0
-}
-
-ul{
-    margin-left: $leftmargin;
-}
-
-p{
-    font-family: $serif;
-    font-style:normal;
-}
-
-.samplepara {
-    border: 3px solid #58a0e0;
-    border-radius: 5px;
-    padding: $padding;
-    background-color: white;
-}
 
 footer {
     border: 2px solid #064277;
@@ -79,14 +82,16 @@ footer {
     margin: 10px auto;
     padding: $padding;
     background-color: $bluebackground;
+    
+    #footer {
+        font-size: .75em;
+        font-style:italic;
+        font-weight: bold;
+        color: #064277;
+        text-align: center;
+                }
 }
 
-#footer {
-    font-size: .75em;
-    font-style:italic;
-    font-weight: bold;
-    color: #064277;
-    text-align: center;
-}
+
 
 
